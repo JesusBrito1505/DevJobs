@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="description" content="Busqueda de trabajo para desarrolladores">
     <title>DevJobs - Busqueda</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/search.css">
 </head>
 <body>
     <header>
@@ -64,45 +64,66 @@
             </form>
         </section>
         <section>
-            <div>
+            <div class="job-listings">
                 <h3>Resultados de busqueda</h3>
-                <article>
+                <article class="job-listing-card">
                     <div>
                         <h4>Ingeniero de software</h4>
                         <p>Tech. Solutions Inc</p>
                         <p>Buscamos ingeniero de software con experiencia en desarrollo web y conocimiento en JavScript, React y Node.js</p>
                     </div>
-                    <button>Aplicar</button>
+                    <button class="button-apply-job">Aplicar</button>
                 </article>
-                <article>
+                <article class="job-listing-card">
                     <div>
                         <h4>Analista de datos</h4>
                         <p>Tech. Solutions Inc</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cum ad, possimus, molestiae quam distinctio perferendis deleniti, obcaecati modi velit eaque magni. Pariatur velit magni numquam, iste eos esse cum.</p>
                     </div>
-                    <button>Aplicar</button>
+                    <button class="button-apply-job">Aplicar</button>
                 </article>
-                <article>
+                <article class="job-listing-card">
                     <div>
                         <h4>Desarrollador de aplicaciones moviles</h4>
                         <p>Tech. Solutions Inc</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni debitis quaerat doloremque ipsam! Similique distinctio, natus sed, atque aperiam aliquam quae officia repellat placeat enim, autem fugit repellendus fuga? Animi.</p>
                     </div>
-                    <button type="submit">Aplicar</button>
+                    <button class="button-apply-job">Aplicar</button>
                 </article>
-                <article>
+                <article class="job-listing-card">
                     <div>
                         <h4>Ingeniero de DevOps</h4>
                         <p>Tech. Solutions Inc</p>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae laborum vitae corrupti ipsum tenetur itaque sed ab eum voluptates quia, perspiciatis molestias reiciendis repellat maiores obcaecati voluptatibus tempora facere ratione!</p>
                     </div>
-                    <button>Aplicar</button>
+                    <button class="button-apply-job">Aplicar</button>
                 </article>
             </div>
+            <nav class="pagination">
+            <a href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M15 6l-6 6l6 6" />
+                </svg>
+            </a>
+            <a class="is-active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 6l6 6l-6 6" />
+                </svg>
+            </a>
+            </nav>
         </section>
     </main>
     <footer>
         <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
     </footer>
+    <script src="/scripts/scripts.js"></script>
 </body>
 </html>

@@ -265,3 +265,7 @@ body > footer{
     align-content: center;
     padding: 1rem;
 } 
+
+.hidden{
+    display: none;
+}

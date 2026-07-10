@@ -224,6 +224,9 @@ main > section:nth-child(2){
         margin-top: 2rem;
         border-bottom: solid var(--border) 1px;
     }
+    .hidden{
+        display: none;
+    }
     article{
         background-color: var(--card-bg);
         border-radius: 8px;
@@ -265,7 +268,3 @@ body > footer{
     align-content: center;
     padding: 1rem;
 } 
-
-.hidden{
-    display: none;
-}

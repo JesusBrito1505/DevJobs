@@ -13,17 +13,11 @@ filters?.forEach(filter =>{
 
         filterName = event.target.name;
         filterValue = event.target.value;
-        console.log(filterName + " " + filterValue);
 
         articles?.forEach(article => {
-
             const contrato = article.querySelector(".contrato").textContent.trim();
-            
-            if(contrato === filterValue ){
-                article.classList.remove("hidden");
-            }else{
-                article.classList.add("hidden");
-            }
+            const isShown = contrato === filterValue || filterValue === "Todos";
+            article.classList.toggle("hidden", !isShown)
         });
     })
 })

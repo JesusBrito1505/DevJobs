@@ -6,9 +6,7 @@
     <title>DevJobs - Busqueda</title>
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="/styles/search.css">
-    <script type="module" src="/scripts/scripts.js"></script>
-    <script type="module" src="/scripts/filter.js"></script>
-    <script type="module" src="/scripts/data.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
 </head>
 <body>
 
@@ -40,33 +38,37 @@
                     <button type="submit">Buscar</button>
                 </div>
                 <div id="filters">
-                    <select name="tecnologia">
-                        <option>Todos</option>
-                        <option>Tecnologia</option>
-                        <option>Angular</option>
-                        <option>React</option>
-                        <option>Vue.Js</option>
+                    <select name="technology">
+                        <option value="all">Tecnologia</option>
+                        <option value="angular">Angular</option>
+                        <option value="react">React</option>
+                        <option value="vue">Vue.Js</option>
                     </select>
-                    <select name="localizacion">
-                        <option>Todos</option>
-                        <option>Localizacion</option>
-                        <option>USA</option>
-                        <option>Union Europea</option>
-                        <option>Latino America</option>
+                    <select name="location">
+                        <option value="all">Localizacion</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="cdmx">Ciudad de Mexico</option>
+                        <option value="guadalajara">Guadalajara</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="bsas">Buenos Aires</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="valencia">Valencia</option>
+                        <option value="bogota">Bogotá</option>
+                        <option value="lima">Lima</option>
+                        <option value="Santiago">Santiago de Chile</option>
+                        <option value="monterrey">Monterrey</option>
                     </select>
                     <select name="contrato">
-                        <option>Todos</option>
-                        <option>Tipo de contrato</option>
-                        <option>Freelance</option>
-                        <option>Tiempo completo</option>
-                        <option>Part time</option>
+                        <option value="all">Tipo de contrato</option>
+                        <option value="freelance">Freelance</option>
+                        <option value="full">Tiempo completo</option>
+                        <option value="part">Part time</option>
                         </select>
-                    <select name="experiencia">
-                        <option>Todos</option>
-                        <option>Nivel de experiencia</option>
-                        <option>Junior</option>
-                        <option>Mid level</option>
-                        <option>Senior</option>
+                    <select name="level">
+                        <option value="all">Nivel de experiencia</option>
+                        <option value="junior">Junior</option>
+                        <option value="mid-level">Mid level</option>
+                        <option value="senior">Senior</option>
                     </select>
                 </div>
             </form>

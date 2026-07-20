@@ -4,7 +4,6 @@ fetch('./data.json')
         return response.json();
     })
     .then((jobs) => {
-        console.log(jobs);
 
         jobs.forEach(job => {
             const article = document.createElement('article')
@@ -17,7 +16,7 @@ fetch('./data.json')
             article.innerHTML = `<div>
                                     <h4>${job.titulo}</h4>
                                     <small>${job.empresa}</small>
-                                    <span class="contrato">${job.ubicacion}</span>
+                                    <span class="contrato">${job.ubicacion} | ${job.data.nivel}</span>
                                     <p>${job.descripcion}</p>
                                 </div>
                                 <button class="button-apply-job">Aplicar</button>`
